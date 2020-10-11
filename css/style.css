@@ -1,0 +1,687 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 44px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.header-logo-link,
+.footer-logo-link {
+  border: none;
+  text-decoration: none;
+}
+
+.input {
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  background-repeat: no-repeat;
+  background-position: left 11px center;
+  padding-left: 35px;
+}
+
+.input-address {
+  flex: 0.8;
+  background-image: url(../svg/home.svg);
+}
+
+.input-search {
+  width: 306px;
+  background-image: url(../svg/search.svg);
+}
+
+.button {
+  padding: 8px 16px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+  border-radius: 2px;
+  color: #595959;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button-primary {
+  background: #1890ff;
+  border: 1px solid #1890ff;
+  color: #FFFFFF;
+}
+
+.button-icon {
+  padding-right: 6px;
+  vertical-align: middle;
+}
+
+.button-text {
+  vertical-align: middle;
+}
+
+.main-promo {
+  box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+  background: #FFF1B8;
+  border-radius: 10px;
+  padding: 70px;
+  background: #FFF1B8 url(../img/promo.png) no-repeat top 38% right 25px / 540px;
+  margin-bottom: 56px;
+}
+
+.main-promo-title {
+  font-size: 39px;
+  line-height: 46px;
+  width: 450px;
+}
+
+.main-promo-text {
+  font-size: 24px;
+  line-height: 28px;
+  width: 540px;
+}
+
+.main-resto-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.main-resto-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.main-resto-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.main-resto-card-link {
+  text-decoration: none;
+}
+
+.main-resto-card-link:link,
+.main-resto-card-link:visited,
+.main-resto-card-link:hover,
+.main-resto-card-link:active {
+  text-decoration: none;
+  color: #262626;
+}
+
+.main-resto-card-image {
+  width: 384px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.main-resto-card {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  overflow: hidden;
+  flex-basis: 31.5%;
+  margin-bottom: 30px;
+}
+
+.main-resto-card-text {
+  padding: 20px 23px 35px;
+}
+
+.main-resto-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.main-resto-card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.main-resto-card-title-painter {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.main-resto-card-tag {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  color: #d9d9d9;
+  padding: 1px 8px;
+  background: #262626;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.main-resto-card-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-resto-card-info-painter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-resto-card-info-rating {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFC107;
+  margin-right: 12px;
+}
+
+.main-resto-card-info-price,
+.main-resto-card-info-price-painter,
+.main-resto-card-info-text,
+.main-resto-card-info-category {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #8C8C8C;
+}
+
+.main-resto-card-info-price-painter {
+  font-weight: bold;
+  color: #262626;
+}
+
+.button-painter {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.main-resto-card-info-category {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 150px;
+}
+
+.main-resto-card-info-price:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #8C8C8C;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-resto-card-info-text {
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.main-resto-card-info-rating-img {
+  margin-right: 7px;
+}
+
+.main {
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-link {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #595959;
+  text-decoration: none;
+}
+
+.footer-link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer-nav {
+  margin-right: auto;
+  margin-left: 35px;
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social-link:not(:last-child) {
+  margin-right: 21px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  display: none;
+}
+
+.modal-active {
+  display: flex;
+}
+
+.modal-dialog {
+  width: 780px;
+  max-width: 95%;
+  background: #fff;
+  border-radius: 5px;
+  margin: auto;
+  padding: 40px 45px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.modal-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.close {
+  font-size: 36px;
+  border: none;
+  background: transparent;
+}
+
+.modal-body {
+  margin-bottom: 52px;
+}
+
+.food-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 15px;
+}
+
+.food-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.food-price {
+  margin-left: auto;
+  margin-right: 47px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.food-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food-counter-value {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 12px;
+}
+
+.food-counter-button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #40A9FF;
+  padding: 5px 16px;
+  background: #FFFFFF;
+  border: 1px solid #40A9FF;
+  border-radius: 2px;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-footer-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FAFAFA;
+  padding: 15px 20px;
+  background: #262626;
+  border-radius: 5px;
+}
+
+.modal-footer .button-primary {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+@media (max-width: 1366px) {
+
+  .container {
+    max-width: 960px;
+  }
+
+  .main-promo {
+    background-size: 530px;
+    background-position: center right -45%;
+  }
+
+  .main-resto-card-title {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .container {
+    max-width: 740px;
+  }
+
+  .main-promo {
+    background-size: 450px;
+    background-position: center right -70%;
+    padding: 60px;
+  }
+
+  .main-promo-title {
+    font-size: 36px;
+  }
+
+  .main-resto-card {
+    flex-basis: 48%;
+  }
+
+  .footer-link {
+    font-size: 16px;
+  }
+
+  .main-promo-text {
+    font-size: 18px;
+    line-height: 22px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 556px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .input-address {
+    flex-basis: 100%;
+    order: 5;
+    margin-top: 20px;
+  }
+
+  .header-buttons {
+    margin-left: auto;
+  }
+
+  .main-promo {
+    background-size: 350px;
+    background-position: center right -80%;
+    padding: 50px;
+  }
+
+  .main-promo-title {
+    font-size: 26px;
+    line-height: 31px;
+    max-width: 300px;
+  }
+
+  .main-promo-text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 280px;
+  }
+
+  .input-search {
+    width: 48%;
+  }
+
+  .main-resto-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+
+  .main-resto-card-info {
+    flex-wrap: wrap;
+  }
+
+  .main-resto-card-info-price {
+    font-size: 15px;
+  }
+
+  .main-resto-card-info-category {
+    font-size: 15px;
+  }
+
+  .main-resto-card-title {
+    font-size: 16px;
+  }
+
+  .footer-nav {
+    margin-left: 25px;
+  }
+
+  .footer-link {
+    font-size: 13px;
+  }
+
+  .footer-link:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .footer-social-link:not(:last-child) {
+    margin-right: 11px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .container {
+    max-width: 90%;
+  }
+
+  .main-promo {
+    background-position: center right -145%;
+    padding: 50px;
+  }
+
+  .input-search {
+    font-size: 14px;
+  }
+
+  .main-resto-card-tag {
+    display: none;
+  }
+
+  .main-resto-card-info-rating {
+    flex-basis: 100%;
+    order: 3;
+  }
+
+  .footer-link:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .footer-social-link:not(:last-child) {
+    margin-right: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .header {
+    justify-content: center;
+  }
+
+  .header-logo {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .header-buttons {
+    margin: auto;
+  }
+
+  .main-promo {
+    background-position: center right -400%;
+    padding: 50px;
+  }
+
+  .main-resto-cards {
+    justify-content: space-around;
+  }
+
+  .main-resto-card {
+    flex-basis: 90%;
+  }
+
+  .main-resto-title {
+    font-size: 30px;
+  }
+
+  .input-search {
+    width: 100%;
+    font-size: 13px;
+    margin-left: 20px;
+  }
+
+  .main-resto-card-tag {
+    display: inline-block;
+  }
+
+  .main-resto-card-info-rating {
+    flex-basis: initial;
+    order: 0;
+  }
+
+  .footer-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    flex-basis: 100%;
+  }
+
+  .footer-nav {
+    margin: 30px auto;
+    width: 80px;
+  }
+
+  .footer-social-links {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .footer-link:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .footer-social-link:not(:last-child) {
+    margin-right: 25px;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .main-promo {
+    background-image: none;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .main-promo-title {
+    font-size: 20px;
+    width: initial;
+  }
+
+  .main-promo-text {
+    width: initial;
+  }
+
+  .main-resto-heading {
+    justify-content: center;
+  }
+
+  .input-search {
+    display: none;
+  }
+
+}
